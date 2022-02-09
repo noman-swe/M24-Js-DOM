@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my website</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h3>My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-2</h3>
+                <p>The cow is a lorem ipsum dolor sit amet, consectetur adipisicing  elit. Minima similiquLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!e magni velit nesciunt voluptatem quia optio dolore quisquam beatae commodi. Consectetur, a voluptatum!</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-3</h3>
+                <p>Lorem ipsum dolLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!or sit amet consectetur adipisicing elit. Voluptatibus, accusantium. Rem repellat neque perferendis iste tenetur accusantium esse, ab autem?</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const name = {
+            name: 'Kissmot Ali', age: 16, height: 60
+        }
+        //console.log('age: ' + name.age);
+        //console.log('name: ' + name.name);
+        //console.log(document.body);
+        const blogTitles = document.getElementsByTagName('h3');
+        //console.log(blogTitles);
+        for(const h3 of blogTitles){
+            //console.log(h3);
+            console.log(h3.innerText);
+        }
+
+        const blogDetails = document.getElementsByTagName('p');
+        for(const p of blogDetails){
+            console.log(p.innerText);
+        }
+    </script>
+    <!-- <script src="js/second.js"> </script> -->
+
+</body>
+</html>
