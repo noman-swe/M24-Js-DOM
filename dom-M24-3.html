@@ -13,15 +13,15 @@
     <main>
         <section>
             <article>
-                <h3>My Awesome Blog-1</h3>
+                <h3 id="first-title">My Awesome Blog-1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!</p>
             </article>
             <article>
-                <h3>My Awesome Blog-2</h3>
+                <h3 id="second-title">My Awesome Blog-2</h3>
                 <p>The cow is a lorem ipsum dolor sit amet, consectetur adipisicing  elit. Minima similiquLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!e magni velit nesciunt voluptatem quia optio dolore quisquam beatae commodi. Consectetur, a voluptatum!</p>
             </article>
             <article>
-                <h3>My Awesome Blog-3</h3>
+                <h3 id="third-title">My Awesome Blog-3</h3>
                 <p>Lorem ipsum dolLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!or sit amet consectetur adipisicing elit. Voluptatibus, accusantium. Rem repellat neque perferendis iste tenetur accusantium esse, ab autem?</p>
             </article>
         </section>
@@ -44,6 +44,20 @@
         for(const p of blogDetails){
             console.log(p.innerText);
         }
+
+        //24-5 Capture and change Element by using getElementById
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+        secondTitle.style.color = 'blue';
+
+        const thirdTitle = document.getElementById('third-title');
+        thirdTitle.innerText='The cow is a domestic animal';
+        thirdTitle.style.color='green';
+        thirdTitle.style.backgroundColor='yellow';
+        thirdTitle.style.padding = '15px';
+        thirdTitle.style.marginLeft = '20px';
+        thirdTitle.style.fontSize = '20px';
+
     </script>
     <!-- <script src="js/second.js"> </script> -->
 
