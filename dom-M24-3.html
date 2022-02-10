@@ -12,16 +12,24 @@
     </header>
     <main>
         <section>
-            <article>
+            <article class="blog">
                 <h3 id="first-title">My Awesome Blog-1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="second-title">My Awesome Blog-2</h3>
                 <p>The cow is a lorem ipsum dolor sit amet, consectetur adipisicing  elit. Minima similiquLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!e magni velit nesciunt voluptatem quia optio dolore quisquam beatae commodi. Consectetur, a voluptatum!</p>
             </article>
-            <article>
+            <article class="blog">
                 <h3 id="third-title">My Awesome Blog-3</h3>
+                <p>Lorem ipsum dolLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!or sit amet consectetur adipisicing elit. Voluptatibus, accusantium. Rem repellat neque perferendis iste tenetur accusantium esse, ab autem?</p>
+            </article>
+            <article class="blog">
+                <h3 id="fourth-title">My Awesome Blog-4</h3>
+                <p>Lorem ipsum dolLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!or sit amet consectetur adipisicing elit. Voluptatibus, accusantium. Rem repellat neque perferendis iste tenetur accusantium esse, ab autem?</p>
+            </article>
+            <article class="blog">
+                <h3 id="fifth-title">My Awesome Blog-5</h3>
                 <p>Lorem ipsum dolLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia excepturi ab itaque impedit libero pariatur autem? Ab, illum perspiciatis. Rerum!or sit amet consectetur adipisicing elit. Voluptatibus, accusantium. Rem repellat neque perferendis iste tenetur accusantium esse, ab autem?</p>
             </article>
         </section>
@@ -57,6 +65,20 @@
         thirdTitle.style.padding = '15px';
         thirdTitle.style.marginLeft = '20px';
         thirdTitle.style.fontSize = '20px';
+        thirdTitle.style.display = 'inline';
+        thirdTitle.style.marginTop = '10px';
+
+        //getElementsByClassName explore
+        const blogs = document.getElementsByClassName('blog');
+        
+        for(const blog of blogs){
+            //console.log(blog);
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '5px'; 
+            blog.style.margin = '10px';
+            blog.style.padding = '10px';
+        }
+
 
     </script>
     <!-- <script src="js/second.js"> </script> -->
